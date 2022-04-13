@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
             EditText editTextNumber = (EditText) findViewById(R.id.edtnumber);
             int angkaDitebak = Integer.parseInt(editTextNumber.getText().toString());
 
-            if(angkaDitebak < randomNumber) {
+            if(angkaDitebak < randomNumber && angkaDitebak <=20) {
                 message = "Angka Lebih Tinggi !!";
             }
-            else if(angkaDitebak > randomNumber) {
+            else if(angkaDitebak > randomNumber && angkaDitebak <=20) {
                 message = "Angka Lebih Rendah !!";
             }
             else if (angkaDitebak == randomNumber)
